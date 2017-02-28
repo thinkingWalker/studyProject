@@ -12,7 +12,15 @@
     <color name="gray_light">#c4c3c9</color>
     <color name="dark_red">#b70000</color>
     <color name="dark_black">#000000</color>
-
+    <!--basic color-->
+    <color name="white">#ffffff</color>
+    <color name="black">#040404</color>
+    <color name="colorTextIcon">#ffffff</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondText">#727272</color>
+    <color name="colorBackground">#eaeaea</color>
+    <color name="colorHint">#999999</color>
+    <color name="colorBackgroundAccent">#ffffff</color>
 
     <!--blue-->
     <color name="colorBluePrimary">#2196F3</color>

@@ -16,8 +16,8 @@ public abstract class RootView<T extends BasePresenter> extends LinearLayout {
 
     protected Unbinder unbinder;
     protected T mPresenter;
-    private Context mContext;
-    private boolean mActive;
+    public Context mContext;
+    protected boolean mActive;
 
     public RootView(Context context) {
         this(context, null, 0);

@@ -1,10 +1,11 @@
-package com.lxr.weiyingstudy;
+package com.lxr.weiyingstudy.base;
 
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.lxr.weiyingstudy.App;
 import com.lxr.weiyingstudy.base.BasePresenter;
 
 import butterknife.Unbinder;

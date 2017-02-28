@@ -1,7 +1,13 @@
-package com.lxr.weiyingstudy;
+package com.lxr.weiyingstudy.ui.activity;
 
 import android.os.Bundle;
 
+import com.lxr.weiyingstudy.R;
+import com.lxr.weiyingstudy.base.BaseActivity;
+import com.lxr.weiyingstudy.presenter.WelcomePresenter;
+import com.lxr.weiyingstudy.ui.view.WelcomeView;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -9,8 +15,9 @@ import butterknife.ButterKnife;
  *
  * @desc
  */
-public class WelcomeActivity  extends BaseActivity{
-
+public class WelcomeActivity  extends BaseActivity {
+    @BindView(R.id.welcome_view)
+    WelcomeView welcomeView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

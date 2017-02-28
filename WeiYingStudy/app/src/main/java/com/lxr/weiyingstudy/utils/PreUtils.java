@@ -28,11 +28,11 @@ public class PreUtils {
     }
 
     public static int getInt(final Context context, final String key, final int defaultValue) {
-        return com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).getInt(key, defaultValue);
+        return PreUtils.getSharedPreferences(context).getInt(key, defaultValue);
     }
 
     public static boolean putInt(final Context context, final String key, final int pValue) {
-        final SharedPreferences.Editor editor = com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).edit();
+        final SharedPreferences.Editor editor = PreUtils.getSharedPreferences(context).edit();
 
         editor.putInt(key, pValue);
 
@@ -40,12 +40,12 @@ public class PreUtils {
     }
 
     public static long getLong(final Context context, final String key, final long defaultValue) {
-        return com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).getLong(key, defaultValue);
+        return PreUtils.getSharedPreferences(context).getLong(key, defaultValue);
     }
 
     public static Long getLong(final Context context, final String key, final Long defaultValue) {
-        if (com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).contains(key)) {
-            return com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).getLong(key, 0);
+        if (PreUtils.getSharedPreferences(context).contains(key)) {
+            return PreUtils.getSharedPreferences(context).getLong(key, 0);
         } else {
             return null;
         }
@@ -53,7 +53,7 @@ public class PreUtils {
 
 
     public static boolean putLong(final Context context, final String key, final long pValue) {
-        final SharedPreferences.Editor editor = com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).edit();
+        final SharedPreferences.Editor editor = PreUtils.getSharedPreferences(context).edit();
 
         editor.putLong(key, pValue);
 
@@ -61,11 +61,11 @@ public class PreUtils {
     }
 
     public static boolean getBoolean(final Context context, final String key, final boolean defaultValue) {
-        return com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).getBoolean(key, defaultValue);
+        return PreUtils.getSharedPreferences(context).getBoolean(key, defaultValue);
     }
 
     public static boolean putBoolean(final Context context, final String key, final boolean pValue) {
-        final SharedPreferences.Editor editor = com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).edit();
+        final SharedPreferences.Editor editor = PreUtils.getSharedPreferences(context).edit();
 
         editor.putBoolean(key, pValue);
 
@@ -73,11 +73,11 @@ public class PreUtils {
     }
 
     public static String getString(final Context context, final String key, final String defaultValue) {
-        return com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).getString(key, defaultValue);
+        return PreUtils.getSharedPreferences(context).getString(key, defaultValue);
     }
 
     public static boolean putString(final Context context, final String key, final String pValue) {
-        final SharedPreferences.Editor editor = com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).edit();
+        final SharedPreferences.Editor editor = PreUtils.getSharedPreferences(context).edit();
 
         editor.putString(key, pValue);
 
@@ -86,7 +86,7 @@ public class PreUtils {
 
 
     public static boolean remove(final Context context, final String key) {
-        final SharedPreferences.Editor editor = com.lxr.weiyingstudy.presenter.PreUtils.getSharedPreferences(context).edit();
+        final SharedPreferences.Editor editor = PreUtils.getSharedPreferences(context).edit();
 
         editor.remove(key);
 
@@ -94,10 +94,10 @@ public class PreUtils {
     }
 
     public static Theme getCurrentTheme(Context context) {
-        return Theme.valueOf(com.lxr.weiyingstudy.presenter.PreUtils.getString(context, "app_theme", Theme.Red.name()));
+        return Theme.valueOf(PreUtils.getString(context, "app_theme", Theme.Red.name()));
     }
 
     public static void setCurrentTheme(Context context, Theme currentTheme) {
-        com.lxr.weiyingstudy.presenter.PreUtils.putString(context, "app_theme", currentTheme.name());
+        PreUtils.putString(context, "app_theme", currentTheme.name());
     }
 }

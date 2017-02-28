@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @desc
  */
-public class WelcomeContract {
+public interface WelcomeContract {
 
     interface View extends BaseView<Presenter>{
         boolean isActive();

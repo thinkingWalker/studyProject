@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">WeiYingStudy</string>
+    <string name="app_name">微影222</string>
+    <string name="loading_failed">数据加载失败</string>
+    <string name="author">微影</string>
+
+
+
+    <!--mine-->
+    <string name="my_record">历史</string>
+    <string name="my_down">缓存</string>
+    <string name="my_collection">收藏</string>
+    <string name="my_them">主题</string>
+    <string name="clean">清除</string>
+    <string name="mine_title">我的</string>
+    <string name="theme_title">主题</string>
+
+    <string name="share">分享</string>
+    <string name="fuli">福利</string>
+    <string name="setting">设置</string>
+    <string name="feedback">建议反馈</string>
+    <string name="collection">我的收藏</string>
+    <string name="download">我的下载</string>
+    <string name="about">关于我们</string>
+    <string name="close">关闭</string>
+    <string name="about_me">\n博 客：<a href="http://blog.csdn.net/jiankeufo">jiankeufo</a>\n\nGithub：<a href="https://github.com/GeekGhost/Ghost">ghost</a></string>
+
 </resources>

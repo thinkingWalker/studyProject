@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lxr.weiyingstudy.widget.theme.ColorRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="?attr/colorPrimary"
+        android:paddingTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <com.lxr.weiyingstudy.widget.theme.ColorTextView
+            android:id="@+id/title_name"
+            style="@style/title_tv_style"
+            android:layout_width="match_parent"
+            android:textColor="?attr/" />
+    </com.lxr.weiyingstudy.widget.theme.ColorRelativeLayout>
+</RelativeLayout>
